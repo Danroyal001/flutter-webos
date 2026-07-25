@@ -9,9 +9,11 @@
 > **Why this fork exists:** so Dartvel can pin, patch, and track LG's
 > `flutter-webos` embedder against the Flutter version Dartvel ships with.
 >
-> **Flutter compatibility:** upstream pins a mid-2026 Flutter revision. Dartvel
-> targets Flutter **3.44.5** (stable); compatibility is being validated against
-> that revision. Native builds and on-device runs require the webOS OSE / TV SDK.
+> **Flutter compatibility (verified 2026-07-25):** upstream pins Flutter
+> **3.38.10** (revision `c6f67ded`). Dartvel targets **3.44.5**. As with other
+> vendor embedders, the webOS engine is a vendor-built artifact, so reaching 3.44
+> depends on LG publishing a 3.44 webOS engine; a version-pin bump alone cannot
+> work. Native builds and on-device runs require the webOS OSE / TV SDK.
 >
 > Upstream, docs, and license are unchanged below.
 
